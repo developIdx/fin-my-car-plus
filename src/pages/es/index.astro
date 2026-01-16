@@ -1,9 +1,8 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import { getLangFromUrl, useTranslations } from "../i18n/utils";
+import Layout from "../../layouts/Layout.astro";
+import { useTranslations } from "../../i18n/utils";
 
-const url = Astro.url;
-const lang = getLangFromUrl(url);
+const lang = "es";
 const t = useTranslations(lang);
 ---
 
@@ -23,7 +22,7 @@ const t = useTranslations(lang);
             <a
               href="#"
               class="store-button apple"
-              onclick="alert('The app is currently in test mode. Contact vtolsolution@gmail.com for private beta access.')"
+              onclick="alert('La app está actualmente en modo test. Contacta a vtolsolution@gmail.com para acceso a la beta privada.')"
             >
               <svg class="store-icon" viewBox="0 0 24 24" fill="currentColor">
                 <path
@@ -31,16 +30,14 @@ const t = useTranslations(lang);
                 ></path>
               </svg>
               <div class="store-text">
-                <span class="store-label"
-                  >{lang === "es" ? "Descargar en" : "Download on"}</span
-                >
+                <span class="store-label">Descargar en</span>
                 <span class="store-name">App Store</span>
               </div>
             </a>
             <a
               href="#"
               class="store-button google"
-              onclick="alert('The app is currently in test mode. Contact vtolsolution@gmail.com for private beta access.')"
+              onclick="alert('La app está actualmente en modo test. Contacta a vtolsolution@gmail.com para acceso a la beta privada.')"
             >
               <svg class="store-icon" viewBox="0 0 24 24" fill="currentColor">
                 <path
@@ -48,9 +45,7 @@ const t = useTranslations(lang);
                 ></path>
               </svg>
               <div class="store-text">
-                <span class="store-label"
-                  >{lang === "es" ? "Disponible en" : "Get it on"}</span
-                >
+                <span class="store-label">Disponible en</span>
                 <span class="store-name">Google Play</span>
               </div>
             </a>
@@ -60,7 +55,7 @@ const t = useTranslations(lang);
           <div class="phone-mockup">
             <img
               src="/images/app/zones-map.jpg"
-              alt="Madrid Zone SER App - Map View"
+              alt="Madrid Zona SER App - Vista de Mapa"
             />
           </div>
         </div>
@@ -81,14 +76,8 @@ const t = useTranslations(lang);
             </div>
             <div class="feature-content">
               <h3 class="feature-title">
-                <span class="text-white"
-                  >{
-                    lang === "es" ? "Consulta todas las" : "Consult all the"
-                  }</span
-                >
-                <span class="text-green"
-                  >{lang === "es" ? "Zonas" : "Zones"}</span
-                >
+                <span class="text-white">Consulta todas las</span>
+                <span class="text-green">Zonas</span>
               </h3>
               <p class="feature-description">
                 {t("features.zones.description")}
@@ -105,12 +94,8 @@ const t = useTranslations(lang);
             </div>
             <div class="feature-content">
               <h3 class="feature-title">
-                <span class="text-white"
-                  >{lang === "es" ? "Rastrea tu coche" : "Track your car"}</span
-                >
-                <span class="text-blue"
-                  >{lang === "es" ? "siempre" : "anytime"}</span
-                >
+                <span class="text-white">Rastrea tu coche</span>
+                <span class="text-blue">siempre</span>
               </h3>
               <p class="feature-description">
                 {t("features.track.description")}
@@ -127,17 +112,9 @@ const t = useTranslations(lang);
             </div>
             <div class="feature-content">
               <h3 class="feature-title">
-                <span class="text-white">{lang === "es" ? "Tus" : "Your"}</span>
-                <span class="text-green"
-                  >{lang === "es" ? "Datos" : "Data"}</span
-                >
-                <span class="text-white"
-                  >{
-                    lang === "es"
-                      ? "solo en tu dispositivo"
-                      : "only in your device"
-                  }</span
-                >
+                <span class="text-white">Tus</span>
+                <span class="text-green">Datos</span>
+                <span class="text-white">solo en tu dispositivo</span>
               </h3>
               <p class="feature-description">
                 {t("features.data.description")}
@@ -154,16 +131,8 @@ const t = useTranslations(lang);
             </div>
             <div class="feature-content">
               <h3 class="feature-title">
-                <span class="text-white"
-                  >{
-                    lang === "es"
-                      ? "Guarda tus favoritos"
-                      : "Save your favorites"
-                  }</span
-                >
-                <span class="text-green"
-                  >{lang === "es" ? "Ubicaciones" : "Locations"}</span
-                >
+                <span class="text-white">Guarda tus favoritos</span>
+                <span class="text-green">Ubicaciones</span>
               </h3>
               <p class="feature-description">
                 {t("features.locations.description")}
@@ -212,7 +181,7 @@ const t = useTranslations(lang);
           <a
             href="#"
             class="store-button apple"
-            onclick="alert('The app is currently in test mode. Contact vtolsolution@gmail.com for private beta access.')"
+            onclick="alert('La app está actualmente en modo test. Contacta a vtolsolution@gmail.com para acceso a la beta privada.')"
           >
             <svg class="store-icon" viewBox="0 0 24 24" fill="currentColor">
               <path
@@ -220,16 +189,14 @@ const t = useTranslations(lang);
               ></path>
             </svg>
             <div class="store-text">
-              <span class="store-label"
-                >{lang === "es" ? "Descargar en" : "Download on"}</span
-              >
+              <span class="store-label">Descargar en</span>
               <span class="store-name">App Store</span>
             </div>
           </a>
           <a
             href="#"
             class="store-button google"
-            onclick="alert('The app is currently in test mode. Contact vtolsolution@gmail.com for private beta access.')"
+            onclick="alert('La app está actualmente en modo test. Contacta a vtolsolution@gmail.com para acceso a la beta privada.')"
           >
             <svg class="store-icon" viewBox="0 0 24 24" fill="currentColor">
               <path
@@ -237,9 +204,7 @@ const t = useTranslations(lang);
               ></path>
             </svg>
             <div class="store-text">
-              <span class="store-label"
-                >{lang === "es" ? "Disponible en" : "Get it on"}</span
-              >
+              <span class="store-label">Disponible en</span>
               <span class="store-name">Google Play</span>
             </div>
           </a>

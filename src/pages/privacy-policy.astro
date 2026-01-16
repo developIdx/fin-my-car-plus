@@ -1,0 +1,167 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+
+const url = Astro.url;
+const lang = getLangFromUrl(url);
+---
+
+<Layout>
+  <main class="legal-container">
+    <h1>Privacy Policy</h1>
+
+    <section class="legal-section">
+      <h2>Data Storage</h2>
+      <p>
+        Madrid Zone SER is designed with your privacy in mind. All data is
+        stored locally on your device:
+      </p>
+      <ul>
+        <li>Location data for parking spots is saved only on your device</li>
+        <li>
+          No personal information is collected or transmitted to our servers
+        </li>
+        <li>All app data remains under your control</li>
+      </ul>
+    </section>
+
+    <section class="legal-section">
+      <h2>Your Privacy</h2>
+      <p>We believe in complete transparency:</p>
+      <ul>
+        <li>We don't collect any user data</li>
+        <li>We don't track your usage</li>
+        <li>We don't send any notifications</li>
+      </ul>
+    </section>
+
+    <section class="legal-section">
+      <h2>Data Security</h2>
+      <p>
+        Since all data is stored locally on your device, you maintain complete
+        control over your information. No data is transmitted over the Internet.
+      </p>
+    </section>
+
+    <section class="legal-section">
+      <h2>Contact Us</h2>
+      <p>
+        If you have any questions about this Privacy Policy, please contact us
+        at:
+        <a href="mailto:vtolsolution@gmail.com">vtolsolution@gmail.com</a>
+      </p>
+    </section>
+
+    <div class="back-home">
+      <a href={lang === "es" ? "/es/" : "/"}>← Back to Home</a>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  .legal-container {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 2rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 2.5rem;
+    text-align: center;
+    background: linear-gradient(
+      90deg,
+      var(--text-primary) 0%,
+      var(--accent-green) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .legal-section {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    padding: 1.5rem 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--accent-green);
+  }
+
+  p {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    line-height: 1.7;
+  }
+
+  ul {
+    margin: 0 0 1rem 1.5rem;
+    padding: 0;
+    list-style: disc;
+  }
+
+  li {
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+  }
+
+  a {
+    color: var(--accent-blue);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  a:hover {
+    color: var(--accent-green);
+  }
+
+  .back-home {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+
+  .back-home a {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    color: var(--text-primary);
+    font-weight: 600;
+    padding: 0.875rem 2rem;
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+
+  .back-home a:hover {
+    background: var(--bg-card-hover);
+    border-color: var(--border-hover);
+    transform: translateY(-2px);
+  }
+
+  @media (max-width: 600px) {
+    .legal-container {
+      margin: 1.5rem auto;
+      padding: 1rem;
+    }
+
+    h1 {
+      font-size: 1.75rem;
+    }
+
+    .legal-section {
+      padding: 1.25rem 1.5rem;
+    }
+
+    h2 {
+      font-size: 1.1rem;
+    }
+  }
+</style>

@@ -1,0 +1,213 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+
+const url = Astro.url;
+const lang = getLangFromUrl(url);
+---
+
+<Layout>
+  <main class="legal-container">
+    <h1>Terms of Service</h1>
+
+    <section class="legal-section">
+      <h2>Acceptance of Terms</h2>
+      <p>
+        By downloading, accessing, or using Madrid Zone SER, you agree to be
+        bound by these Terms of Service. If you do not agree to these terms,
+        please do not use the app.
+      </p>
+    </section>
+
+    <section class="legal-section">
+      <h2>Use of the App</h2>
+      <ul>
+        <li>
+          You may use Madrid Zone SER solely for personal, non-commercial
+          purposes.
+        </li>
+        <li>
+          You agree not to misuse the app or attempt to access it using a method
+          other than the interface and instructions provided.
+        </li>
+        <li>
+          You are responsible for maintaining the security of your device and
+          any data stored within the app.
+        </li>
+      </ul>
+    </section>
+
+    <section class="legal-section">
+      <h2>Privacy</h2>
+      <p>
+        Your privacy is important to us. Please review our
+        <a href={lang === "es" ? "/es/privacy-policy" : "/privacy-policy"}
+          >Privacy Policy</a
+        >
+        to understand how we handle your information.
+      </p>
+    </section>
+
+    <section class="legal-section">
+      <h2>Intellectual Property</h2>
+      <ul>
+        <li>
+          All content, features, and functionality in Madrid Zone SER are the
+          exclusive property of the app developer.
+        </li>
+        <li>
+          You may not copy, modify, distribute, or create derivative works based
+          on the app or its content.
+        </li>
+      </ul>
+    </section>
+
+    <section class="legal-section">
+      <h2>Disclaimer</h2>
+      <p>
+        Madrid Zone SER is provided "as is" and without warranties of any kind.
+        We do not guarantee that the app will be error-free or uninterrupted.
+        The parking zone information displayed is for reference only and may not
+        reflect real-time availability.
+      </p>
+    </section>
+
+    <section class="legal-section">
+      <h2>Limitation of Liability</h2>
+      <p>
+        To the fullest extent permitted by law, Madrid Zone SER and its
+        developers shall not be liable for any damages arising from your use of
+        the app, including but not limited to parking violations or fines.
+      </p>
+    </section>
+
+    <section class="legal-section">
+      <h2>Changes to Terms</h2>
+      <p>
+        We may update these Terms of Service from time to time. Continued use of
+        the app after changes constitutes acceptance of the new terms.
+      </p>
+    </section>
+
+    <section class="legal-section">
+      <h2>Contact</h2>
+      <p>
+        If you have any questions about these Terms of Service, please contact
+        us at
+        <a href="mailto:vtolsolution@gmail.com">vtolsolution@gmail.com</a>.
+      </p>
+    </section>
+
+    <div class="back-home">
+      <a href={lang === "es" ? "/es/" : "/"}>← Back to Home</a>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  .legal-container {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 2rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 2.5rem;
+    text-align: center;
+    background: linear-gradient(
+      90deg,
+      var(--text-primary) 0%,
+      var(--accent-green) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .legal-section {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    padding: 1.5rem 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--accent-green);
+  }
+
+  p {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    line-height: 1.7;
+  }
+
+  ul {
+    margin: 0 0 1rem 1.5rem;
+    padding: 0;
+    list-style: disc;
+  }
+
+  li {
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+  }
+
+  a {
+    color: var(--accent-blue);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  a:hover {
+    color: var(--accent-green);
+  }
+
+  .back-home {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+
+  .back-home a {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    color: var(--text-primary);
+    font-weight: 600;
+    padding: 0.875rem 2rem;
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+
+  .back-home a:hover {
+    background: var(--bg-card-hover);
+    border-color: var(--border-hover);
+    transform: translateY(-2px);
+  }
+
+  @media (max-width: 600px) {
+    .legal-container {
+      margin: 1.5rem auto;
+      padding: 1rem;
+    }
+
+    h1 {
+      font-size: 1.75rem;
+    }
+
+    .legal-section {
+      padding: 1.25rem 1.5rem;
+    }
+
+    h2 {
+      font-size: 1.1rem;
+    }
+  }
+</style>

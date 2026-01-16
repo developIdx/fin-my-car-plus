@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- English Pages -->
+  <url>
+    <loc>https://madrid-zona-ser.vtolsolution.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://madrid-zona-ser.vtolsolution.com/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://madrid-zona-ser.vtolsolution.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://madrid-zona-ser.vtolsolution.com/"/>
+    <lastmod>2026-01-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>https://madrid-zona-ser.vtolsolution.com/privacy-policy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://madrid-zona-ser.vtolsolution.com/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://madrid-zona-ser.vtolsolution.com/es/privacy-policy"/>
+    <lastmod>2026-01-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://madrid-zona-ser.vtolsolution.com/terms-of-service</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://madrid-zona-ser.vtolsolution.com/terms-of-service"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://madrid-zona-ser.vtolsolution.com/es/terms-of-service"/>
+    <lastmod>2026-01-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <!-- Spanish Pages -->
+  <url>
+    <loc>https://madrid-zona-ser.vtolsolution.com/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://madrid-zona-ser.vtolsolution.com/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://madrid-zona-ser.vtolsolution.com/es/"/>
+    <lastmod>2026-01-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>https://madrid-zona-ser.vtolsolution.com/es/privacy-policy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://madrid-zona-ser.vtolsolution.com/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://madrid-zona-ser.vtolsolution.com/es/privacy-policy"/>
+    <lastmod>2026-01-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://madrid-zona-ser.vtolsolution.com/es/terms-of-service</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://madrid-zona-ser.vtolsolution.com/terms-of-service"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://madrid-zona-ser.vtolsolution.com/es/terms-of-service"/>
+    <lastmod>2026-01-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+</urlset>
